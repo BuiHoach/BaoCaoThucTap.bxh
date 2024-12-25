@@ -46,7 +46,7 @@
     position: absolute;
     top: 250px;
     z-index: 1;
-    margin: 0 40rem;
+    margin: 0 35rem;
 }
 .box-banner img {
     filter: brightness(3) invert(1);
@@ -107,11 +107,13 @@
 
 }
 
-#newws b {
+#news b {
     color: #36385B;
     font-size: 15px;
 }
-
+#news a {
+    text-decoration: none;
+}
 
 h2 {
     margin-left: 38px;
@@ -121,7 +123,8 @@ h2 {
     font-family: Gotham-Ultra;
     position: relative;
     margin-bottom: -.5rem;
-    padding-top: 30px ;
+    padding-top: 30px;
+    text-decoration: none !important;
 }
 
 
