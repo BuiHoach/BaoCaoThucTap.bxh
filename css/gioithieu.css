@@ -1,0 +1,441 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#banner {
+    background-image: url("/imgs/ok.jpg"); 
+    background-position: center;
+    background-size: 50% 100%;
+    height: 400px; /* Hoặc chọn một chiều cao cố định */
+    display: flex; /* Nếu có nội dung bên trong cần căn chỉnh */
+    align-items: center; /* Căn nội dung giữa theo trục dọc */
+    justify-content: center; /* Căn nội dung giữa theo trục ngang */
+    position: relative;
+    margin-top: 160px;
+
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    background-color: #080808;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    opacity: 0.7;
+}
+/* Căn chỉnh bố cục */
+
+
+
+
+
+
+
+/* Hiệu ứng kết hợp */
+@keyframes blinkScale {
+    0%, 100% {
+        opacity: 1; /* Hiển thị đầy đủ */
+        transform: scale(1); /* Kích thước bình thường */
+    }
+    50% {
+        opacity: 0.5; /* Mờ đi một chút */
+        transform: scale(1.1); /* Phóng to nhẹ */
+    }
+}
+/* Tiêu đề */
+.banner-title h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: blinkScale 3s infinite ease-in-out;
+}
+
+
+.box-banner img {
+    filter: brightness(3) invert(1);
+    width: 10%;
+}
+
+.box-banner {
+    text-align: center;
+    padding-top: 2.2rem;
+    animation: blinkScale 3s infinite ease-in-out;
+}
+
+#banner h3 {
+    text-align: center;
+    color: #fff;
+    font-family: Gotham-Ultra;
+    padding-top: 10px;
+    position: relative;
+}
+/*  */
+#new {
+    background-image: url("/imgs/backgound.jfif");
+}
+
+#newss .container-x {
+    background-color: #fff;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #bd945f;
+}
+
+
+
+#new .container-x {
+    position: relative;
+}
+
+#new .container-x {
+    top: -2rem;
+
+}
+video{
+width: 100%;
+background-color: #f7f7f7; /* Màu nền nhẹ nhàng */
+padding: 10px;
+border-radius: 16px;
+}
+/* Tổng thể khung chứa */
+
+/* Cấu trúc các cột */
+.box-product .col-4 {
+    position: relative; /* Đặt tương đối để hỗ trợ hiệu ứng */
+    overflow: hidden; /* Ẩn các phần vượt ra ngoài khi hover */
+    border-radius: 12px; /* Bo tròn góc cho khung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ảnh */
+.box-product img {
+    width: 100%; /* Đảm bảo ảnh chiếm 100% khung cha */
+    height: auto; /* Giữ tỷ lệ gốc của ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng hover phóng to ảnh */
+}
+
+/* Hiệu ứng khi hover vào ảnh */
+.box-product .col-4:hover {
+    transform: translateY(-5px); /* Nhấc cả khung ảnh lên một chút */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ nổi bật khi hover */
+}
+
+.box-product img:hover {
+    transform: scale(1.1); /* Phóng to ảnh thêm 10% */
+}
+
+
+h3 {
+    padding-top: 3rem;
+    color: #B69A78;
+    font-family: monospace;
+    font-size: 25px;
+    font-family: Gotham-Ultra;
+}
+
+/* Thiết lập kiểu dáng chung cho section */
+#news {
+    background-color: #f9f9f9;
+}
+
+/* Kiểu dáng cho container */
+.container-x {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Tiêu đề */
+#news h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x)* -.5);
+    margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    position: relative;
+    margin-bottom: 2.6rem;
+    padding-top: 3rem;
+}
+.box-product{
+    padding: 10px 0;
+}
+.box-product p {
+    font-family: Gotham-Medium;
+    font-size: 14.5px;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-align: justify;
+    padding-top: 50px ;
+}
+
+.box-product span {
+    font-family: Gotham-Medium;
+    font-size: 15.6px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.col-12 {
+    text-align: center;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+/* sứ mệnh */
+#newss .img-about-us {
+    position: relative;
+}
+
+#newss .box-about-us {
+    display: flex;
+    background-color: #fff;
+    margin-top: 1.5rem;
+    border: 2px solid #bd945f;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+}
+
+#newss h5 {
+    font-family: Gotham-Medium;
+    color: #bd945f;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 16px;
+}
+.about-us-bottom p {
+    font-family: Gotham-Medium;
+    font-size: 14.5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+/*  */
+.about-us-bottom p {
+    font-family: Gotham-Medium;
+    font-size: 14.5px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Phong cách chính cho khung chứa */
+.box-about-us {
+    background: #f9f9f9; /* Màu nền sáng tạo cảm giác dễ chịu */
+    border-radius: 10px; /* Góc bo tròn mềm mại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+    text-align: center; /* Canh giữa nội dung */
+    padding: 20px; /* Tạo khoảng trống giữa nội dung và viền */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng khi hover */
+    height: 120px;
+}
+
+/* Hiệu ứng hover */
+.box-about-us:hover {
+    transform: scale(1.05); /* Tăng nhẹ kích thước */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn */
+}
+
+/* Phong cách cho logo */
+.logo-about-us img {
+    max-width: 50%; /* Đảm bảo ảnh không vượt quá kích thước khung */
+    height: auto; /* Duy trì tỷ lệ hình ảnh */
+    border-radius: 5px; /* Bo tròn nhẹ cho ảnh */
+}
+
+
+
+/* Nội dung đoạn văn */
+.content-about-us p {
+    font-size: 1rem; /* Kích thước vừa phải */
+    color: #555; /* Màu xám cho chữ mềm mại hơn */
+    line-height: 1.5; /* Giãn dòng để dễ đọc hơn */
+    margin: 0;
+}
+/* thêm giỏ hàng */
+
+.item button{
+    height: 30px ;
+    padding: 0 12px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.item button:hover{
+    background-color: red;
+}
+/* -------------------------------cart */
+.cart{
+    margin-top: 250px;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+}
+.cart img{
+    border-radius: 60%;
+    padding: 0 10px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+/* }-----------------------------cart */
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+
+}
+.cart button{
+    height: 30px ;
+    padding: 0 20px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2831a7;
+}
+.cart button:hover{
+    background-color: red;
+}
+.cart i{
+    cursor: pointer;
+    float: inline-start;
+}
+/* quan trọng */
+.cart h2 {
+    padding: 0;
+    margin: 1rem;
+}
+
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+
+    #banner {
+        top: -20px;
+        height: 200px;
+    }
+    #banner::before {
+        height: 200px;
+    }
+    /* ----------- */
+    #new {
+        background-color: #f9f9f9;
+        top: -20px;
+        position: relative;
+        margin-bottom: -15px;
+    }
+    /*-------------------- */
+    .box-product p {
+        padding: 0;
+    }
+    .reset .col-6{
+        width: 100% !important;
+    }
+    .cart{
+        width: 350px;
+    
+    }
+
+    
+}
+
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    #banner {
+        top: -24px;
+        height: 200px;
+    }
+    .box-product p {
+        
+        padding-top: 0;
+    }
+    
+    #new {
+        background-color: #f9f9f9;
+        top: -24px;
+        position: relative;
+        margin-bottom: -24px;
+    }
+    .cart{
+        width: 500px;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

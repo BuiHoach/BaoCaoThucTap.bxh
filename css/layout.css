@@ -1,0 +1,774 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    z-index: 23;
+    width: 100%;
+    margin-top: -160px;
+    height: 160px;
+    
+}
+#header-nav{
+    width: 100%;
+}
+#header-nav ul li a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family:Gotham-Medium;
+    color: #fff;
+   
+}
+#header-nav li {
+    position: relative;
+    font-family: Gotham-Medium;
+}
+#header-nav ul li:hover ::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #bd945f;
+    
+}
+.nav-icon i{
+    float: right;
+    display: none;
+}
+/* Ẩn nav-icon trên màn hình lớn */
+.nav-icon {
+    display: none;
+}
+
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 325px;
+    margin: 0;
+}
+.bgr{
+    background-color: #f56567;
+    border: 1px solid #f56567;
+
+}
+/* menu */
+.content{
+    background-color: #d65254;
+    outline: none;
+}
+.top-header {
+    display: flex; /* Căn chỉnh các phần tử theo hàng ngang */
+    justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+    align-items: center; /* Căn giữa theo trục dọc */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Loại bỏ padding mặc định */
+    margin: 0; /* Loại bỏ margin mặc định */
+    gap: 20px; /* Tạo khoảng cách giữa các mục */
+}
+
+.top-header li {
+    display: flex; /* Để biểu tượng và text nằm ngang hàng */
+    align-items: center; /* Căn giữa biểu tượng với text */
+}
+
+.top-header a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    display: flex; /* Sắp xếp biểu tượng và text theo hàng ngang */
+    align-items: center; /* Căn giữa biểu tượng và text */
+}
+
+.top-header a i {
+    margin-right: 5px; /* Khoảng cách giữa biểu tượng và text */
+    font-size: 18px; /* Kích thước biểu tượng */
+}
+
+.col-6.header-right {
+    display: flex; /* Sử dụng flexbox để điều chỉnh vị trí */
+    justify-content: flex-end; /* Đẩy nội dung sang bên phải */
+    align-items: center; /* Căn chỉnh theo trục dọc */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0; /* Loại bỏ khoảng cách padding mặc định */
+    margin: 0; /* Loại bỏ khoảng cách margin mặc định */
+}
+
+.col-6.header-right li {
+    display: flex; /* Để sắp xếp các liên kết ngang hàng */
+    gap: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+.col-6.header-right a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    display: flex; /* Sử dụng flex để căn chỉnh biểu tượng và text */
+    align-items: center; /* Căn giữa biểu tượng và text */
+}
+
+.col-6.header-right a i {
+    margin-right: 5px; /* Khoảng cách giữa icon và text */
+}
+
+.content .top-max a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content ul li i{
+    color: red;
+}
+/* logo */
+
+.logo {
+    display: flex; /* Sử dụng Flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 90px; /* Đặt chiều cao khung chứa logo */
+    overflow: hidden; /* Ẩn phần ảnh thừa nếu vượt quá khung */
+}
+
+.logo img {
+    height: 90px; /* Đặt chiều cao của ảnh khớp với khung chứa */
+    object-fit: cover; /* Giữ độ rõ nét và cắt phần thừa để vừa khung */
+    display: block; /* Đảm bảo không có khoảng cách mặc định của ảnh */
+}
+
+
+
+
+.borderr{
+    border: 0;
+    width: 100%;
+    border-bottom: 3px solid red !important;
+    background-color: #FE585A;
+    
+}
+
+
+
+
+
+/* timm kiếm */
+/* Container chính để căn giữa */
+.timkiem {
+    display: flex; /* Sử dụng Flexbox cho container cha */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 90px; /* Đặt chiều cao toàn bộ màn hình */
+    line-height: normal; /* Bỏ giá trị line-height không cần thiết */
+    text-align: center;
+}
+
+.timkiem .form {
+    display: flex; /* Sử dụng Flexbox để căn chỉnh các phần tử trong form */
+    align-items: center; /* Đảm bảo các phần tử căn giữa theo chiều dọc */
+    gap: 1px; /* Khoảng cách giữa các phần tử */
+}
+
+.timkiem form,
+input,
+select,
+button {
+    height: 40px;
+    font-size: 16px;
+    
+}
+
+.form select {
+    border-radius: 40px 0 0 40px;
+    width: 150px;
+    border: 1px solid transparent; /* Loại bỏ đường viền không cần thiết */
+    padding: 0 20px;
+    color: red;
+    
+}
+
+.form input {
+    width: 450px;
+    padding: 0 15px; /* Giảm padding để giữ các phần tử cùng chiều cao */
+    margin: 0; /* Loại bỏ margin để tránh lệch hàng */
+    border: 1px solid transparent; /* Loại bỏ đường viền không cần thiết */
+    color: red;
+    margin: 0px -5px;
+}
+
+.form button {
+    border-radius: 0 40px 40px 0;
+    width: 50px;
+    background-color: rgb(228, 228, 204);
+    font-weight: bold;
+    border: 1px solid transparent; /* Loại bỏ đường viền không cần thiết */
+    display: flex;
+    align-items: center; /* Căn giữa nội dung trong nút */
+    justify-content: center;
+    cursor: pointer;
+}
+.form button:hover{
+    background: #faf603;
+    
+}
+.search-input::placeholder {
+    color: red; /* Đặt màu chữ của placeholder là màu đỏ */
+    font-weight: inherit;
+  }
+  
+.form button i{
+    color: red;
+}
+.form button:hover {
+    color: rgb(15, 68, 211);
+}
+
+.form input:hover {
+    color: red;
+}
+
+
+.box-1 {
+    line-height: 90px;
+    margin: 0 auto;
+    
+}
+
+.box-1 i {
+    color: red;
+    padding: 0 5px;
+}
+
+.box-1 a {
+    color:#f3eeee;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+.box-1 a:hover {
+    color: blue;
+}
+h2 {
+    margin: 10px;
+}
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    position: relative;
+    margin-bottom: 2.6rem;
+    transition: all ease 0.5s;
+}
+
+
+/* footer */
+#footer-bgr{
+    background-color: #363636;
+}
+footer {
+    position: relative;
+    background-color: #363636;/* Màu nền đen như trong ảnh */
+    color: white; /* Chữ màu trắng */
+    
+}
+
+/* Dải răng cưa ở phía trên */
+.footer-rangcua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Độ cao của hình răng cưa */
+    background: radial-gradient(circle, #363636 70%, transparent 71%);
+    background-size: 40px 60px; /* Kích thước các răng */
+    background-repeat: repeat-x; /* Lặp theo chiều ngang */
+    transform: translateY(-50%); /* Đẩy lên nửa chiều cao để che đi biên */
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 48%;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-section p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.social-links a {
+    background-color: #4caf50;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #45a049;
+}
+
+.btn-book {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-book:hover {
+    background-color: #c61b28;
+}
+
+.footer-bottom {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.scroll-up {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-up:hover {
+    background-color: #0056b3;
+}
+
+
+.container h6 {
+    color: #D3D3D3;
+    padding-top: 2rem;
+    transition: all ease 0.5s;
+}
+h6:hover{
+    color: rgb(255, 0, 191);
+}
+.container h5 {
+    color: #D3D3D3;
+    font-family: monospace;
+    font-size: 1rem;
+    font-family: Gotham-Medium;
+    transition: all ease 0.5s;
+}
+h5:hover{
+    color: rgb(255, 0, 191);
+}
+.box-distance span {
+    padding-right: 10px;
+    color: #D3D3D3;
+    transition: all ease 0.5s;
+}
+.box-distance span:hover{
+    color: rgb(255, 0, 191);
+}
+.box-distance a {
+    color: #D3D3D3;
+    font-size: 15px;
+    font-family: Gotham-Thin;
+    transition: all ease 0.5s;
+    text-decoration: none;
+}
+/* Đổi màu khi hover vào liên kết */
+.box-distance a:hover {
+    color: #FF4500; /* Màu mới khi hover */
+}
+
+h6 {
+    position: relative;
+    text-transform: uppercase;
+    font-family: Gotham-Medium;
+    font-size: 15px;
+}
+
+h6::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 3rem;
+    height: 3px;
+    left: 0%;
+    background-color: #D3D3D3;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu mượt mà */
+}
+
+/* Đổi màu khi hover vào h6 */
+h6:hover::after {
+    background-color: #FF4500; /* Màu mới khi hover */
+}
+
+.box-distance p {
+    margin-bottom: 0;
+    color: #D3D3D3;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: Gotham-Thin;
+    transition: background-color 0.3s ease;
+
+}
+/* Đổi màu khi hover vào liên kết */
+.box-distance p:hover {
+    color: #FF4500; /* Màu mới khi hover */
+}
+
+
+.check img {
+    width: 40%;
+    height: 50px;
+    margin-top: 1.1rem;
+    transition: all ease 0.5s; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Phóng to ảnh khi hover */
+.check img:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+
+
+.box-icons img {
+    height: 25px;
+    margin-bottom: 14px;
+    padding: 0 5px;
+    color: #D3D3D3;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Phóng to ảnh khi hover */
+.box-icons img:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+
+
+.box-icons i {
+    color: #D3D3D3;
+    font-size: 30px !important;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Phóng to biểu tượng khi hover */
+.box-icons i:hover {
+    transform: scale(1.2); /* Phóng to 1.2 lần khi hover */
+}
+h1:hover {
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+h1 {
+    transition: all ease 0.5s;
+}
+h2:hover {
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+h2 {
+    transition: all ease 0.5s;
+}
+.product-title{
+    transition: all ease 0.5s;
+}
+.product-title:hover{
+    color: red;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.product-size:hover{
+    color: blue;
+}
+.product-price:hover{
+    color:orangered;
+}
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+    /* Ẩn top-header */
+    .content .top-header {
+       display: none;
+    }
+    .content .header-right{
+        width: 100% !important;
+        padding: 0 30px;
+        
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        overflow:visible;
+    }
+    .logo img{
+       
+        padding: 10px;
+    }
+    .timkiem {
+        justify-content: flex-start;
+        
+    }
+
+    .form select{
+        width: 50px;
+    }
+    .form input{
+        width: 130px;
+    }
+    .box-1 a{
+        display: none;
+    }
+    .box-1 i {
+        color: red;
+        padding: 0 10px;
+    }
+    .borderr .col-2{
+        width: 20% !important;
+
+    }
+    .borderr .col-8{
+        width: 60% !important;
+    }
+    .nav-icon{
+        text-align: right;
+        margin-right: 40px;
+    }
+    .nav-icon i{
+        cursor: pointer;
+        display: block;
+       
+    }
+    .active {
+        display: block !important;
+    }
+   
+    header {
+        position: fixed;
+        z-index: 23;
+        width: 100%;
+        margin-top: -160px;
+        height: auto;
+    }
+    .header-menu{
+        display: none;
+        height: auto;
+        height: 100%;
+        position: relative;
+        padding: 0;
+        
+    }
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    #toggleClas:checked ~ .header-menu{
+        max-height: 100%;
+    }
+    .header-menu li a{
+        display: block;
+        overflow: hidden;
+        padding: 5px 0;
+        font-size: 20px;
+
+    }
+    #header-nav li {
+        margin-left: 0;
+    }
+    #header-nav ul li:hover ::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 17%;
+        height: 0.3rem;
+        background-color: #bd945f;
+    }
+    .nav-icon {
+        display: block;
+       
+    }
+    /* footer */
+    .box-block{
+        display: flex !important;
+        text-align: center;
+    }
+    h6::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 5rem;
+        height: 3px;
+        left: 40%;
+        background-color: #D3D3D3;
+        transition: background-color 0.3s ease;
+    }
+    
+}
+
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    .content .top-header {
+        width: 70% !important;
+    }
+    .content .header-right{
+        width: 30% !important;
+    }
+    .content .top-max a {
+        font-size: 12px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        overflow:visible;
+    }
+    .logo img{
+       
+        padding: 10px;
+    }
+    
+    .form select{
+        width: 125px;
+    }
+    .form input{
+        width: 260px;
+    }
+    .box-1 a{
+        display: none;
+    }
+    .box-1 i {
+        color: red;
+        padding: 0 70px;
+    }
+    .borderr .col-2{
+        width: 20% !important;
+
+    }
+    .borderr .col-8{
+        width: 60% !important;
+    }
+    /* mênu */
+    .nav-icon{
+        text-align: right;
+        margin-right: 68px;
+    }
+    .nav-icon i{
+        cursor: pointer;
+        display: block;
+       
+    }
+    .active {
+        display: block !important;
+    }
+   
+    header {
+        position: fixed;
+        z-index: 23;
+        width: 100%;
+        margin-top: -160px;
+        height: auto;
+    }
+    .header-menu{
+        display: none;
+        height: auto;
+        height: 100%;
+        position: relative;
+        padding: 0;
+    }
+    
+    #toggleClas:checked ~ .header-menu{
+        max-height: 100%;
+    }
+    .header-menu li a{
+        display: block;
+        overflow: hidden;
+        padding: 5px 0;
+        font-size: 20px;
+
+    }
+    #header-nav li {
+        margin-left: 0;
+    }
+    #header-nav ul li:hover ::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 17%;
+        height: 0.3rem;
+        background-color: #bd945f;
+    }
+    .nav-icon {
+        display: block;
+       
+    }
+    /* footer */
+    footer .col-lg-5{
+        width: 45% !important;
+    }
+    footer .col-lg-4{
+        width: 25% !important;
+    }footer .col-lg-3{
+        width: 30% !important;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

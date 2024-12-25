@@ -1,0 +1,266 @@
+/* Container Styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#contents {
+    margin-top: 160px;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+/* Title Section */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-top: 30px;
+}
+.title-container h2{
+    color: #006600;
+}
+
+.title-container p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:black;
+    margin: 0;
+}
+#contents img{
+    border-radius: 16px;
+}
+/* Subtitle Section */
+.css-p p {
+    text-align: justify;
+    color:black;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.box-pho p{
+    padding: 10px 0;
+    color:black;
+}
+.box-so{
+    font-size: 3rem;
+}
+.gioithieu h4{
+    padding: 30px 5px;
+    margin: 0;
+    color: #006600;
+}
+.boder {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.boder span{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+.anh1{
+    padding: 10px 0;
+}
+/*  */
+h4 {
+    color: #2c3e50;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.heigh ul li::before {
+    content: "• ";
+    color: #000;
+    font-weight: bold;
+}
+.heigh li {
+    line-height: 3;
+}
+.heigh img{
+    padding: 10px 0;
+}
+.box-b1{
+    padding: 10px 0;
+}
+.box-b1 .b1{ 
+    font-size: 1.5rem;
+    background-color: #006600;
+    border-radius: 16px;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.box-b1 .b2{ 
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: black;
+    
+}
+.sidebar {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.box-pandding{
+    padding:5px 0;
+}
+.box-img img{
+    border-radius: 60%;
+    padding:5px 0;
+}
+hr{
+    margin: 0 !important;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+  
+.sidebar ul li a {
+    text-decoration: none;
+    color: #006600;
+}
+  
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+/* thêm giỏ hàng */
+
+.item button{
+    height: 30px ;
+    padding: 0 12px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.item button:hover{
+    background-color: red;
+}
+/* -------------------------------cart */
+.cart{
+    margin-top: 250px;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+}
+.cart img{
+    border-radius: 60%;
+    padding: 0 10px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+/* }-----------------------------cart */
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+
+}
+.cart button{
+    height: 30px ;
+    padding: 0 20px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2831a7;
+}
+.cart button:hover{
+    background-color: red;
+}
+.cart i{
+    cursor: pointer;
+    float: inline-start;
+}
+/* quan trọng */
+.cart h2 {
+    padding: 0;
+    margin: 1rem;
+}
+.cart h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #bd945f;
+}
+
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+
+    #wrapper {
+        position: relative;
+        top: -20px;
+    }
+    .cart{
+        width: 350px;
+    
+    }
+    #contents {
+        position: relative;
+        top: -20px;
+    }
+    .box-dflex{
+        display: block !important;
+        
+    }
+    .box-dflex .col-8{
+        width: 100%;
+    }
+    .box-dflex .col-4{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    #contents {
+        position: relative;
+        top: -25px;
+    }
+}

@@ -1,0 +1,466 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sp{
+    margin-top: 160px;
+}
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    background-color: #080808;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    opacity: 0.7;
+}
+
+/* banner  caurousel */
+#carouselExampleControls span {
+    border-radius: 100%;
+    background: transparent;
+    color:#fff;
+    width: 3rem;
+    height: 2rem;
+    margin-top: 20em;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+#carouselExampleControls span:hover{
+    background-color: #E67E22;
+}
+.carousel-item img {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+   
+}
+/*  */
+/*  */
+#banner {
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+    margin: 0 40rem;
+}
+.box-banner img {
+    filter: brightness(3) invert(1);
+    width: 100% !important;
+}
+/* Hiệu ứng kết hợp */
+@keyframes blinkScale {
+    0%, 100% {
+        opacity: 1; /* Hiển thị đầy đủ */
+        transform: scale(1); /* Kích thước bình thường */
+    }
+    50% {
+        opacity: 0.5; /* Mờ đi một chút */
+        transform: scale(1.1); /* Phóng to nhẹ */
+    }
+}
+/* Tiêu đề */
+.banner-title h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: blinkScale 3s infinite ease-in-out;
+}
+
+
+.box-banner img {
+    filter: brightness(3) invert(1);
+    width: 10%;
+}
+
+.box-banner {
+    text-align: center;
+    padding-top: 2.2rem;
+    animation: blinkScale 3s infinite ease-in-out;
+}
+
+#banner h3 {
+    text-align: center;
+    color: #fff;
+    font-family: Gotham-Ultra;
+    padding-top: 10px;
+    position: relative;
+}
+/* neww */
+#newws .header-menu {
+    margin-left: 38px;
+    position: absolute;
+    margin-top: .2rem;
+}
+
+#newws span {
+    padding: 0 .5rem;
+    color: #BF9765;
+    font-family: Gotham-Medium;
+    font-size: 15px;
+
+
+}
+
+#newws b {
+    color: #36385B;
+    font-size: 15px;
+}
+
+
+h2 {
+    margin-left: 38px;
+    font-size: 1.6rem;
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    position: relative;
+    margin-bottom: -.5rem;
+    padding-top: 30px ;
+}
+
+
+
+#news {
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+#news .container-x {
+    background-color: #fff;
+}
+
+#news {
+    padding-bottom: 2rem;
+}
+
+.list-product {
+    position: relative;
+    padding: 15px 0;
+}
+
+
+
+#news .container-x {
+    top: 0rem;
+
+}
+/* mota */
+#Mota{
+    background-color: #f3f3f3;
+
+}
+.header-menu-1{
+    text-align: start;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.header-menu-1 a{
+    text-decoration: none;
+}
+.header-menu-1  b{
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: #ceb902;
+}
+.header-menu-1 span{
+    font-size: 1.2rem;
+    font-family: Gotham-Medium;
+    color: #ceb902;
+}
+/*  */
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    position: relative;
+    margin-bottom: 2.6rem;
+    transition: all ease 0.5s;
+}
+
+
+
+h2:hover {
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+.product-title {
+    font-size: 1rem;
+    font-family: Gotham-Ultra;
+    text-transform: uppercase;
+    margin: 0.6rem auto 0.3rem;
+    text-align: center;
+    color: #2c2e53;
+}
+
+.product-size {
+    font-size: .75rem;
+    margin: 0.3rem auto;
+    text-align: center;
+}
+.product-size .value{
+    text-decoration: line-through;
+}
+.product-price {
+    font-size: .75rem;
+    margin: 0.3rem auto;
+    text-align: center;
+    margin: 0.3rem auto;
+    text-align: center;
+}
+.product-price .colorr{
+    color: red;
+    font-size: 1rem;
+}
+.product-price .or{
+    font-size: 1rem;
+}
+.icon-star {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-star span,
+.icon-star .fa-star {
+    font-size: 0.75rem;
+    color: #bd945f;
+}
+
+.list-product {
+    position: relative;
+}
+
+.list-product .slick-arrow {
+    position: absolute;
+    top: 30%;
+    color: #a00000;
+}
+
+.slick-prev .slick-disabled:before {
+    opacity: 30;
+}
+
+.slick-next .slick-disabled:before {
+    opacity: 30;
+}
+
+.slick-prev:before {
+    color: #bd945f !important;
+}
+
+.slick-next:before {
+    color: #bd945f !important;
+}
+
+
+.slick-slider .slick-track {
+    margin-bottom: 3rem;
+}
+
+.box-product>div {
+    width: 90% !important;
+}
+
+.box-product>div {
+    margin: auto;
+}
+
+.container .list-product {
+    width: 100%;
+}
+
+.box-product .imgs{
+    overflow: hidden;
+    border-radius: 15px;
+}
+.hover-img{
+    box-shadow: 5px 5px 25px #00000026;
+    padding: 15px 10px;
+    border-radius: 15px;
+    height: 350px;
+}
+.box-product img {
+    width: 100%;
+    transition: all ease 0.5s;
+    border-radius: 15px;
+    height: 130px;
+}
+
+.box-product .imgs:hover img {
+    transform: scale(1.3);
+}
+/* thêm giỏ hàng */
+
+.item button{
+    height: 30px ;
+    padding: 0 12px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.item button:hover{
+    background-color: red;
+}
+/* -------------------------------cart */
+.cart{
+    margin-top: 250px;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+}
+.cart img{
+    border-radius: 60%;
+    padding: 0 10px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+/* }-----------------------------cart */
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+    z-index: 1;
+
+}
+.cart button{
+    height: 30px ;
+    padding: 0 20px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2831a7;
+}
+.cart button:hover{
+    background-color: red;
+}
+.cart i{
+    cursor: pointer;
+    float: inline-start;
+}
+/* quan trọng */
+.cart h2 {
+    padding: 0;
+    margin: 1rem;
+}
+.cart h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.5rem;
+}
+
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+    .cart{
+        width: 350px;
+    }
+    .sp {
+        position: relative;
+        top: -20px;
+    }
+    #Mota {
+        background-color: #f3f3f3;
+        position: relative;
+        margin-top: -25px;
+    }
+   
+    .slick-prev {
+        left: -2px !important;
+    }
+    .slick-next {
+        right: -2px !important;
+    }
+    .box-banner img {
+        filter: brightness(3) invert(1);
+        width: 10%;
+    }
+    #banner {
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+        margin: 0 100px;
+    }
+    .carousel-item img {
+        height:auto;
+        background-position: center;
+        background-size: cover;
+       
+    }
+    .hover-img{
+        box-shadow: 5px 5px 25px #00000026;
+        padding: 15px 10px;
+        border-radius: 15px;
+        height: 300px;
+    }
+    
+
+}
+
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    .sp {
+        position: relative;
+        top: -25px;
+    }
+    #Mota {
+        background-color: #f3f3f3;
+        position: relative;
+        margin-top: -25px;
+       
+    }
+    
+    .slick-dots {
+        display: none !important;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0 !important;
+    }
+    #banner {
+        position: absolute;
+        top: 150px;
+        z-index: 1;
+        margin: 0 300px;
+    }
+    .hover-img{
+        box-shadow: 5px 5px 25px #00000026;
+        padding: 15px 10px;
+        border-radius: 15px;
+        height: 350px !important;
+    }
+
+}

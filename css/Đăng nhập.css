@@ -1,0 +1,331 @@
+#wrapper {
+    background: url("/imgs/đăng\ nhập.jpg");
+    background-size: cover;
+    background-position-y: -600px;
+    font-size: 16px;
+    margin-top: 160px;
+}
+
+#wrapper::before {
+    content: "";
+    position: absolute;
+    background-color: #141414;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 216vh;
+    opacity: 0.7;
+}
+
+#wrapper {
+    min-height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-login {
+    max-width: 500px;
+    background: #F2F2F2;
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+    position: relative;
+    border-radius: 10px;
+}
+
+.form-heading {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Gotham-Medium;
+}
+
+/* form group */
+.form-group {
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.form-group i {
+    color: black;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-right: 10px;
+
+}
+
+.form-input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: black;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.form-input::placeholder {
+    color: black;
+    font-family: Gotham-Medium;
+}
+
+/* form group-1 */
+.form-group-1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    color: #fff;
+}
+
+.form-group-1 i {
+    color: #fff;
+    font-size: 14px;
+    background-color: #096222;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-input-1 {
+    background: #0B872E;
+    border: none;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+}
+
+.form-input-1::placeholder {
+    color: #f5f5f5;
+    font-family: Gotham-Medium;
+}
+
+/* form group-2 */
+.form-group-2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    color: #fff;
+}
+
+.form-group-2 i {
+    color: #fff;
+    font-size: 14px;
+    background-color: #3A5A98;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-input-2 {
+    background: #4066B0;
+    border: none;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+
+}
+
+.form-input-2::placeholder {
+    color: #f5f5f5;
+}
+
+#eye i {
+    padding-right: 0;
+    cursor: pointer;
+}
+
+/* lưu thông tin */
+.d-flex label {
+    color: black;
+    padding: 11px;
+    font-size: 14px;
+    font-family: Gotham-Medium;
+
+}
+
+.d-flex .right {
+    padding: 11px;
+    font-size: 14px;
+    font-family: Gotham-Medium;
+    margin-left: 173px;
+}
+
+.form-submit {
+    background: #0495BA;
+    border: 1px solid #D7D7D7;
+    color: black;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+    font-family: Gotham-Medium;
+    border-radius: 5px;
+}
+
+.form-submit:hover {
+    border: 1px solid #54a0ff;
+}
+
+/* đăng ký */
+.text {
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: Gotham-Medium;
+}
+
+/* thêm giỏ hàng */
+
+.item button {
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.item button:hover {
+    background-color: red;
+}
+
+/* -------------------------------cart */
+.cart {
+    margin-top: 250px;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+}
+
+.cart img {
+    border-radius: 60%;
+    padding: 0 10px;
+}
+
+.cart table {
+    width: 100%;
+}
+
+.cart table thead tr th:first-child {
+    text-align: left;
+}
+
+.cart table tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.cart table thead tr th:last-child {
+    text-align: right;
+}
+
+.cart table tbody tr td:last-child {
+    text-align: right;
+}
+
+/* }-----------------------------cart */
+.cart {
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+
+}
+
+.cart button {
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2831a7;
+}
+
+.cart button:hover {
+    background-color: red;
+}
+
+.cart i {
+    cursor: pointer;
+    float: inline-start;
+}
+
+/* quan trọng */
+.cart h2 {
+    padding: 0;
+    margin: 1rem;
+}
+
+.cart h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #bd945f;
+}
+
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+
+    #wrapper {
+        position: relative;
+        top: -20px;
+        min-height: 100vh;
+    }
+    #wrapper::before{
+        min-height: 100vh;
+    }
+    .cart {
+        width: 350px;
+
+    }
+
+    footer {
+        margin-top: -20px;
+    }
+
+    .d-flex .right {
+
+        margin-left: 50px;
+
+
+    }
+}
+
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    #wrapper {
+        position: relative;
+        top: -25px;
+        min-height: 100vh;
+    }     
+    #wrapper::before{
+        min-height: 100vh;
+    }
+    footer{
+        margin-top: -20px;
+    }
+
+}

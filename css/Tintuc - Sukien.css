@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.card a{
+    text-decoration: none !important;
+}
+/* Container Styles */
+#contents {
+    margin-top: 160px;
+    margin-bottom: 3rem;
+}
+
+/* Title Section */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-top: 30px;
+}
+
+.title-container .line {
+    width: 100px;
+    height: 3px;
+    background-color: #ff6600;
+    margin: 0 1rem;
+}
+
+.title-container p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+.css-p i{
+    font-size: 1.2rem;
+   color: red;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Subtitle Section */
+.css-p p {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+/* cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+.card {
+    background: #fff;
+    overflow: hidden;
+   border: none;
+    text-align: center;
+    border-radius: 16px !important;
+    height: 250px;
+    
+}
+.box-boder {
+    box-shadow: 5px 5px 25px #00000026;
+    padding: 15px 10px;
+    border-radius: 20px;
+    height: 300px;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng */
+}
+
+  
+.card .title {
+    padding: 10px;
+    color: #0cda1d;
+    font-weight: 600;
+}
+  
+.sidebar {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.sidebar h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.box-pandding{
+    padding:5px 0;
+}
+.box-img img{
+    border-radius: 60%;
+    padding:5px 0;
+}
+hr{
+    margin: 0 !important;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+  
+.sidebar ul li a {
+    text-decoration: none;
+    color: #006600;
+}
+  
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+/* thêm giỏ hàng */
+
+.item button{
+    height: 30px ;
+    padding: 0 12px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.item button:hover{
+    background-color: red;
+}
+/* -------------------------------cart */
+.cart{
+    margin-top: 250px;
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    position: absolute;
+
+}
+.cart img{
+    border-radius: 60%;
+    padding: 0 10px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+/* }-----------------------------cart */
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+
+}
+.cart button{
+    height: 30px ;
+    padding: 0 20px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #2831a7;
+}
+.cart button:hover{
+    background-color: red;
+}
+.cart i{
+    cursor: pointer;
+    float: inline-start;
+}
+/* quan trọng */
+.cart h2 {
+    padding: 0;
+    margin: 1rem;
+}
+/* Ẩn menu lớn và điều chỉnh header trên màn hình nhỏ */
+@media only screen and (max-width: 767px) {
+    #contents {
+        position: relative;
+        top: -20px;
+    }
+    .cart{
+        width: 350px;
+    
+    }
+    .cards {
+        display: block !important;
+        gap: 0;
+        padding: 0;
+    }
+    .box-boder {
+        margin: 10px 0;
+    }
+
+
+}
+@media only screen and (min-width: 678px) and (max-width:1023px) {
+    #contents {
+        position: relative;
+        top: -25px;
+    }
+    .box-boder {
+        
+        height: auto;
+    }
+    .card {
+        height: 300px;
+    }
+
+}
