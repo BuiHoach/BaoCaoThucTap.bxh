@@ -192,7 +192,11 @@ button {
     border: 1px solid transparent; /* Loại bỏ đường viền không cần thiết */
     padding: 0 20px;
     color: red;
+    cursor: pointer;
     
+}
+.form select option{
+    cursor: pointer;
 }
 
 .form input {
@@ -269,7 +273,20 @@ h2 {
     margin-bottom: 2.6rem;
     transition: all ease 0.5s;
 }
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 500px;
+    right: 0;
+    top: 0;
+    background-color: #c1c1c1;
+    padding: 12px 20px;
+    overflow: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+    z-index: 10;
 
+}
 
 /* footer */
 #footer-bgr{
@@ -594,7 +611,7 @@ h2 {
         height: auto;
         height: 100%;
         position: relative;
-        padding: 0;
+        padding: 10px 0;
         
     }
     dl, ol, ul {
@@ -614,17 +631,22 @@ h2 {
     #header-nav li {
         margin-left: 0;
     }
+    
     #header-nav ul li:hover ::before {
         content: "";
         position: absolute;
         top: 100%;
-        width: 17%;
+        width: 20%;
         height: 0.3rem;
         background-color: #bd945f;
+        text-align: center;
     }
     .nav-icon {
         display: block;
        
+    }
+    .cart {    
+        width: 350px !important;
     }
     /* footer */
     .box-block{
@@ -712,7 +734,7 @@ h2 {
         height: auto;
         height: 100%;
         position: relative;
-        padding: 0;
+        padding: 10px 0;
     }
     
     #toggleClas:checked ~ .header-menu{
@@ -732,7 +754,7 @@ h2 {
         content: "";
         position: absolute;
         top: 100%;
-        width: 17%;
+        width: 10%;
         height: 0.3rem;
         background-color: #bd945f;
     }

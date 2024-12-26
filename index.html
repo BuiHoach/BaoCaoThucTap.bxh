@@ -76,31 +76,31 @@
                             </div>
 
                         </div>
-                        <div class="col-8 timkiem">
-                            <div class="form">
-                                <select name="" id="select">
-                                    <option value="#">Tất cả
-                                    <option value="">Miền Bắc</option>
-                                    <option value="">Miền Trung</option>
-                                    <option value="">Miền Nam</option>
-                                    </option>
-                                    <input type="text" value="" placeholder="Tìm kiếm" class="search-input">
-
-                                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                                </select>
-
+                        <div class=" col-8 timkiem">
+                                    <div class="form">
+                                        <select id="select" onchange="scrollToSection()">
+                                            <option value="#">Tất cả</option>
+                                            <option value="HTML">Miền Bắc</option>
+                                            <option value="CSS">Miền Trung</option>
+                                            <option value="jquery">Miền Nam</option>
+                                            <option value="PHP">Đồ uống</option>
+                                            <option value="camket">Tráng miệng</option>
+                                        </select>
+                                        <input type="text" value="" placeholder="Tìm kiếm" class="search-input">
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
                             </div>
-                        </div>
-                        <div class="col-2 box">
-                            
-                            <div class="box-1">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <a href=""><label for="">Giỏ hàng</label></a>
+
+                            <div class="col-2 box">
+
+                                <div class="box-1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href=""><label for="">Giỏ hàng</label></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="bgr">
             <div class="nav-icon">
@@ -130,6 +130,34 @@
         </section>
     </header>
     <section class="sp">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <div class="text dark">
+                        <div class="text-inner text-center">
+                            <h3>Ẩm thực 3 Miền</h3>
+                            <p><span style="font-size: 95%;">Thưởng thức ẩm thực 3 miền chuẩn vị Việt Nam, đậm đà và đặc
+                                    sắc cùng gia đình.</span></p>
+                            <a class="button primary lowercase" style="border-radius:99px;">
+                                <span>Đặt bàn ngay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box-back">
+                    <div class="text dark">
+                        <div class="text-inner text-center">
+                            <h3>Chào mừng!</h3>
+                            <p><span style="font-size: 95%;">Hãy liên hệ ngay với chúng tôi để trải nghiệm dịch vụ tuyệt
+                                    vời nhất.</span></p>
+                            <a class="button primary lowercase" style="border-radius:99px;">
+                                <span>Tìm hiểu thêm</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -156,37 +184,10 @@
                 <span class="">></span>
             </button>
         </div>
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <div class="text dark">
-                        <div class="text-inner text-center">
-                            <h3>Ẩm thực 3 Miền</h3>
-                            <p><span style="font-size: 95%;">Không gì tuyệt vời bằng thưởng thức ẩm thực 3 miền
-                                    cùng gia đình và người thân. Chúng tôi cung cấp các món ăn chuẩn vị ẩm thực Việt Nam
-                                    mang đến cảm giác quen thuộc nhưng cực kỳ đặc sắc cho bạn thưởng thức</span></p>
-                            <a class="button primary lowercase" style="border-radius:99px;">
-                                <span>Đặt bàn ngay</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box-back">
-                    <div class="text dark">
-                        <div class="text-inner text-center">
-                            <h3>Chào mừng!</h3>
-                            <p><span style="font-size: 95%;">Hãy liên hệ ngay với chúng tôi để trải nghiệm dịch vụ tuyệt vời nhất.</span></p>
-                            <a class="button primary lowercase" style="border-radius:99px;">
-                                <span>Tìm hiểu thêm</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+       
+
     </section>
-   
+
     <section id="product">
         <div class="container ">
             <div class="title-container">
@@ -366,7 +367,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="CSS" class="tab_content">
@@ -527,7 +528,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="jquery" class="tab_content">
@@ -688,7 +689,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="PHP" class="tab_content">
@@ -849,7 +850,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="camket" class="tab_content">
@@ -1010,7 +1011,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -1029,7 +1030,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                 </tbody>
             </table>
         </form>
@@ -1039,39 +1040,39 @@
         <button>Chốt đơn</button>
     </section>
     <script>
-       $(document).ready(function () {
-    var $tabs = $('.clearfix li'); // Lưu trữ các tab
-    var $tabContents = $('.tab_content'); // Lưu trữ các nội dung của tab
+        $(document).ready(function () {
+            var $tabs = $('.clearfix li'); // Lưu trữ các tab
+            var $tabContents = $('.tab_content'); // Lưu trữ các nội dung của tab
 
-    // Ẩn tất cả nội dung và chỉ hiển thị nội dung của tab đầu tiên
-    $tabContents.hide().first().show(); // Ẩn tất cả nội dung, hiển thị đầu tiên
-    $tabs.first().addClass('selected'); // Đánh dấu tab đầu tiên là được chọn
+            // Ẩn tất cả nội dung và chỉ hiển thị nội dung của tab đầu tiên
+            $tabContents.hide().first().show(); // Ẩn tất cả nội dung, hiển thị đầu tiên
+            $tabs.first().addClass('selected'); // Đánh dấu tab đầu tiên là được chọn
 
-    // Bắt sự kiện click vào các tab
-    $tabs.on('click', function (e) {
-        e.preventDefault();
+            // Bắt sự kiện click vào các tab
+            $tabs.on('click', function (e) {
+                e.preventDefault();
 
-        var $this = $(this); // Lưu trữ tab hiện tại
+                var $this = $(this); // Lưu trữ tab hiện tại
 
-        // Kiểm tra nếu tab đã được chọn thì không làm gì
-        if ($this.hasClass('selected')) return;
+                // Kiểm tra nếu tab đã được chọn thì không làm gì
+                if ($this.hasClass('selected')) return;
 
-        $tabs.removeClass('selected'); // Bỏ class 'selected' ở tất cả các tab khác
-        $this.addClass('selected'); // Thêm class 'selected' cho tab được chọn
+                $tabs.removeClass('selected'); // Bỏ class 'selected' ở tất cả các tab khác
+                $this.addClass('selected'); // Thêm class 'selected' cho tab được chọn
 
-        // Lấy ID của tab content tương ứng với tab đã chọn
-        var targetTab = $this.children('a').attr('href');
+                // Lấy ID của tab content tương ứng với tab đã chọn
+                var targetTab = $this.children('a').attr('href');
 
-        // Ẩn tất cả các tab content
-        $tabContents.hide();
+                // Ẩn tất cả các tab content
+                $tabContents.hide();
 
-        // Hiển thị nội dung tương ứng
-        $(targetTab).show();
-    });
-});
+                // Hiển thị nội dung tương ứng
+                $(targetTab).show();
+            });
+        });
 
     </script>
-     <section class=" video">
+    <section class=" video">
         <div class="container">
             <div class="row box-video1">
                 <div class="box-video col-8">
@@ -1120,7 +1121,7 @@
                     </div>
                 </div>
             </div>
-    </section> 
+    </section>
     <!-- About Us -->
     <section id="about-us">
         <div class="container">
@@ -1217,7 +1218,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- San pham hot -->
     <section id="content" class="contentss">
         <div class="container ">
@@ -1433,8 +1434,8 @@
                     </div>
                 </div>
             </div>
-            
-    </section> 
+
+    </section>
     <!-- lh -->
     <section>
         <div id="baner-lk">
@@ -1477,9 +1478,9 @@
             </div>
 
         </div>
-    </section> 
+    </section>
     <!-- Bài viết mới -->
-    <section id="contents" >
+    <section id="contents">
         <div class="container ">
             <div class="title-container">
                 <div class="line"></div>
@@ -1524,7 +1525,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <section id="form">
         <!-- Form liên hệ đặt bàn -->
         <div class="form-container">
@@ -1544,7 +1545,7 @@
                         <input type="number" id="so-nguoi" placeholder="Số người">
                     </div>
                 </div>
-    
+
                 <!-- Row 2 -->
                 <div class="form-row">
                     <div class="form-group">
@@ -1556,7 +1557,7 @@
                         <input type="date" id="date">
                     </div>
                 </div>
-    
+
                 <!-- Row 3 -->
                 <div class="form-row">
                     <div class="form-group">
@@ -1574,7 +1575,7 @@
                         </select>
                     </div>
                 </div>
-    
+
                 <p class="note">
                     Khách đặt tiệc hội nghị, liên hoan vui lòng gọi trực tiếp: <strong>0909009009</strong>
                 </p>
@@ -1582,7 +1583,7 @@
             </form>
         </div>
     </section>
-    
+
     <!-- footer -->
     <footer>
         <div class="footer-rangcua"></div>
@@ -1618,7 +1619,7 @@
                     <div class="box-icons">
                         <a href="https://www.facebook.com/em.langleben.90?mibextid=LQQJ4d"><i
                                 class="fa-brands fa-square-facebook"></i></a>
-                        <a href="/img/Liênhee.jpg"><img src="/imgs/AnhCat/san-pham/images/icon_07.jpg" alt=""></a>
+                        <a href="/Lienhe.html"><img src="/imgs/icon_07.jpg" alt=""></a>
                         <a href=""><i class="fa-sharp fa-regular fa-envelope"></i></a>
                     </div>
                     <div class="check">
@@ -1627,7 +1628,7 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

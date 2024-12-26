@@ -7,10 +7,21 @@
     filter: brightness(3) invert(1);
     width: 10%;
 }
-
+/* Hiệu ứng kết hợp */
+@keyframes blinkScale {
+    0%, 100% {
+        opacity: 1; /* Hiển thị đầy đủ */
+        transform: scale(1); /* Kích thước bình thường */
+    }
+    50% {
+        opacity: 0.5; /* Mờ đi một chút */
+        transform: scale(1.1); /* Phóng to nhẹ */
+    }
+}
 .box-banner {
     text-align: center;
     padding-top: 2.2rem;
+    animation: blinkScale 3s infinite ease-in-out;
 }
 .header {
     background-color: #ff9933;
@@ -22,8 +33,11 @@
 
 .header h1 {
     margin-bottom: 10px;
+    animation: blinkScale 3s infinite ease-in-out;
 }
-
+.header p{
+    animation: blinkScale 3s infinite ease-in-out;
+}
 .contact-section {
     display: flex;
     justify-content: space-around;

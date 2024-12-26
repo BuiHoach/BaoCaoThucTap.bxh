@@ -515,6 +515,10 @@ h6::after {
         width: auto;
         
     }
+    .box-1 i {
+        color: red;
+        padding: 0 30px !important;
+    }
 
 
 }

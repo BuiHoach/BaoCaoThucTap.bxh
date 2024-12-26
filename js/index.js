@@ -1,3 +1,24 @@
+function scrollToSection() {
+  const selectElement = document.getElementById('select');
+  const selectedValue = selectElement.value;
+
+  if (selectedValue !== '#') {
+      const targetElement = document.getElementById(selectedValue);
+
+      if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+          // Đảm bảo thêm lớp "selected" cho link tương ứng
+          document.querySelectorAll('#main ul li a').forEach((link) => {
+              link.classList.remove('selected');
+          });
+
+          const matchingLink = document.querySelector(`#main ul li a[href="#${selectedValue}"]`);
+          if (matchingLink) matchingLink.classList.add('selected');
+      }
+  }
+}
+
 
 
 

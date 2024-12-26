@@ -58,7 +58,7 @@
 
 .box-banner img {
     filter: brightness(3) invert(1);
-    width: 10%;
+    width: 20%;
 }
 
 .box-banner {
@@ -398,6 +398,10 @@ h2 {
         width: 350px;
     
     }
+    .box-banner img {
+        filter: brightness(3) invert(1);
+        width: 40%;
+    }
 
     
 }
@@ -421,6 +425,10 @@ h2 {
     .cart{
         width: 500px;
     
+    }
+    .box-banner img {
+        filter: brightness(3) invert(1);
+        width: 20%;
     }
 
 
