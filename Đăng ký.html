@@ -135,39 +135,33 @@
             <h1 class="form-heading">ĐĂNG KÝ</h1>
             <div class="form-group">
                 <i class="far fa-user"></i>
-                <input type="text" class="form-input" placeholder="Tên đăng ký">
+                <input type="text" id="username" class="form-input" placeholder="Tên đăng ký">
             </div>
             <div class="form-group">
                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Mật khẩu">
+                <input type="password" id="password" class="form-input" placeholder="Mật khẩu">
                 <div id="eye">
                     <i class="far fa-eye"></i>
                 </div>
             </div>
             <div class="text-center">
-                    
-                <p class="text">
-                    Hoặc
-                </p>
+                <p class="text">Hoặc</p>
             </div>
             <div class="form-group-1">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <input type="text" class="form-input-1" placeholder=" Bằng Số Điện Thoại or Email">
+                <input type="submit" class="form-input-1" value="Bằng Số Điện Thoại or Email">
             </div>
             <div class="form-group-2">
                 <i class="fa-brands fa-square-facebook"></i>
-                <input type="text" class="form-input-2" placeholder=" Đăng Nhập Bằng Facebook">
+                <input type="submit" class="form-input-2" value="Đăng Nhập Bằng Facebook">
             </div>
             <div class="text-center">
-                    
-                <p class="text">
-                    Hoặc
-                </p>
+                <p class="text">Hoặc</p>
             </div>
-            <input type="submit" value="Đăng ký" class="form-submit">
-            
+            <input type="submit" value="Đăng ký" id="btn-submit" class="form-submit">
         </form>
     </div>
+    
     <section class="cart">
         <i class="fa-solid fa-xmark"></i>
         <h2>Giỏ hàng</h2>
@@ -191,19 +185,7 @@
         </div>
         <button>Chốt đơn</button>
     </section>
-    <script>
-        $(document).ready(function(){
-        $('#eye').click(function(){
-            $(this).toggleClass('open');
-            $(this).children('i').toggleClass('fa-eye-slash fa-eye');
-            if($(this).hasClass('open')){
-                $(this).prev().attr('type', 'text');
-            }else{
-                $(this).prev().attr('type', 'password');
-            }
-        });
-    });
-    </script>
+    
      <!-- footer -->
      <footer>
         <div class="footer-rangcua"></div>
@@ -260,4 +242,5 @@
         integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/Đăng-Ký.js"></script>
 </html>

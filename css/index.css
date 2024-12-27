@@ -3,7 +3,29 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
+
+/* Đảm bảo các tab nội dung được ẩn ban đầu */
+.tab-content {
+    display: none;
+}
+
+/* Khung cho các tab nội dung */
+.tab-content-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Khung bao quanh */
+    background-color: #f9f9f9;
+}
+
+/* Làm nổi bật tab được chọn */
+.tabs li.selected {
+    font-weight: bold;
+    color: blue;
+}
+
 
 .sp{
     margin-top: 160px;

@@ -4,6 +4,40 @@
     text-decoration: none;
     list-style: none;
 }
+.cursor {
+    z-index: 9999; /* Đảm bảo hiển thị cao hơn */
+    position: fixed;
+    background: #2696e8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8,
+                0 0 60px #2696e8,
+                0 0 100px #2696e8;
+    animation: hue-rotation 3s infinite linear;
+}
+
+@keyframes hue-rotation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor::before {
+    content: "";
+    position: absolute;
+    background: #2696e8;
+    width: 20px;
+    height: 20px;
+    opacity: 0; /* Đừng đặt opacity thành 0 */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: hue-rotation 3s infinite linear;
+}
 
 header {
     position: fixed;

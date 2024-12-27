@@ -22,6 +22,23 @@ function scrollToSection() {
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    let cursor = document.querySelector('.cursor');
+
+    if (!cursor) { // Kiểm tra nếu chưa có con trỏ
+        cursor = document.createElement('div');
+        cursor.classList.add('cursor');
+        document.body.appendChild(cursor);
+    }
+
+    // Cập nhật vị trí chuột
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
+    });
+});
+
+
 
 
 
@@ -222,4 +239,28 @@ $(document).ready(function () {
     $('.nav-icon').click(function () {
         $('.header-menu').toggleClass('active');
     });
+});
+
+
+// 
+// Xử lý nút tìm kiếm
+document.querySelector('.fa-magnifying-glass').parentElement.addEventListener('click', function () {
+  const searchInput = document.querySelector('.search-input').value.trim();
+  const category = document.getElementById('select').value;
+
+  if (!searchInput) {
+      alert('Vui lòng nhập từ khóa tìm kiếm!');
+      return;
+  }
+
+  // Thực hiện tìm kiếm
+  alert(`Tìm kiếm: ${searchInput} trong danh mục ${category}`);
+});
+
+// Quản lý giỏ hàng
+let cartCount = 0; // Khởi tạo số lượng sản phẩm
+
+document.querySelector('.fa-cart-shopping').addEventListener('click', function () {
+  cartCount++;
+  alert(`Bạn đã thêm sản phẩm vào giỏ hàng. Tổng số sản phẩm: ${cartCount}`);
 });
