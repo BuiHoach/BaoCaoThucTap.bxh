@@ -109,6 +109,7 @@
     font-size: 2rem;
     font-weight: bold;
     color: rgb(235, 109, 109);
+    padding-top: 15px;
 }
 .text p {
     font-size: 1rem;
@@ -200,6 +201,7 @@
 }
   /* thực đon */
 #product{
+    background-image: url("/imgs/backgound.jfif");
     margin: 0;
     text-align: center;
     background-color: #f7f7f7; /* Màu nền nhẹ nhàng */
@@ -941,7 +943,7 @@ form .form-group input:focus {
     
 }
 
-@media only screen and (min-width: 678px) and (max-width:1023px) {
+@media only screen and (min-width: 678px) and (max-width:1024px) {
     .sp {
         top: -24px;
         position: relative;

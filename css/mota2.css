@@ -310,7 +310,7 @@ hr{
     }
     
 }
-@media only screen and (min-width: 678px) and (max-width:1023px) {
+@media only screen and (min-width: 678px) and (max-width:1024px) {
     #contents {
         position: relative;
         top: -25px;

@@ -39,7 +39,7 @@
     height: 400px !important;
     background-position: center;
     background-size: cover;
-    border: 5px solid #242323 !important;
+   
    
 }
 /*  */
@@ -48,7 +48,7 @@
     position: absolute;
     top: 250px;
     z-index: 1;
-    margin: 0 35rem;
+    margin: 0 40.1rem;
 }
 .box-banner img {
     filter: brightness(3) invert(1);
@@ -417,7 +417,7 @@ h2:hover {
     }
     #banner {
         position: absolute;
-        top: 50px;
+        top: 5px;
         z-index: 1;
         margin: 0 100px;
     }
@@ -437,14 +437,14 @@ h2:hover {
         height: 300px !important;
         background-position: center;
         background-size: cover;
-        border: 5px solid #242323 !important;
+      
        
     }
     
 
 }
 
-@media only screen and (min-width: 678px) and (max-width:1023px) {
+@media only screen and (min-width: 678px) and (max-width:1024px) {
     .sp {
         position: relative;
         top: -25px;
@@ -464,7 +464,7 @@ h2:hover {
     }
     #banner {
         position: absolute;
-        top: 150px;
+        top: 5px;
         z-index: 1;
         margin: 0 300px;
     }
@@ -473,6 +473,11 @@ h2:hover {
         padding: 15px 10px;
         border-radius: 15px;
         height: 350px !important;
+    }
+    .carousel-item img {
+        height: 300px !important;
+        background-position: center;
+        background-size: cover;
     }
 
 }
