@@ -3,7 +3,7 @@ function scrollToSection() {
   const selectedValue = selectElement.value;
 
   if (selectedValue !== '#') {
-      const targetElement = document.getElementById(selectedValue);
+      const targetElement = document.getElementById(selectedValue)
 
       if (targetElement) {
           targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.left = `${e.clientX}px`;
     });
 });
-
-
+// 
 
 
 

@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="cursor"></div>
+   
     <!-- header -->
     <header>
         <div class="content">
@@ -78,30 +78,30 @@
 
                         </div>
                         <div class=" col-8 timkiem">
-                                    <div class="form">
-                                        <select id="select" onchange="scrollToSection()">
-                                            <option value="#">Tất cả</option>
-                                            <option value="HTML">Miền Bắc</option>
-                                            <option value="CSS">Miền Trung</option>
-                                            <option value="jquery">Miền Nam</option>
-                                            <option value="PHP">Đồ uống</option>
-                                            <option value="camket">Tráng miệng</option>
-                                        </select>
-                                        <input type="text" value="" placeholder="Tìm kiếm" class="search-input">
-                                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                                    </div>
+                            <div class="form">
+                                <select id="select" onchange="scrollToSection()">
+                                    <option value="#">Tất cả</option>
+                                    <option value="HTML">Miền Bắc</option>
+                                    <option value="CSS">Miền Trung</option>
+                                    <option value="jquery">Miền Nam</option>
+                                    <option value="PHP">Đồ uống</option>
+                                    <option value="camket">Tráng miệng</option>
+                                </select>
+                                <input type="text" value="" placeholder="Tìm kiếm" class="search-input">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
+                        </div>
 
-                            <div class="col-2 box">
+                        <div class="col-2 box">
 
-                                <div class="box-1">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <a href=""><label for="">Giỏ hàng</label></a>
-                                </div>
+                            <div class="box-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href=""><label for="">Giỏ hàng</label></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="bgr">
             <div class="nav-icon">
@@ -189,7 +189,7 @@
 
     </section>
 
-    <section id="product">
+    <!-- <section id="product">
         <div class="container ">
             <div class="title-container">
                 <div class="line"></div>
@@ -203,16 +203,423 @@
             </div>
             <div id="main">
                 <ul class="clearfix">
-                    <li><a href="#HTML" class="selected">Miền Bắc</a></li>
-                    <li><a href="#CSS">Miền Trung</a></li>
-                    <li><a href="#jquery">Miền Nam</a></li>
-                    <li><a href="#PHP">Đồ uống</a></li>
-                    <li><a href="#camket">Tráng miệng</a></li>
+                    <li><a class="link-sp" href="#HTML" data-id="mienBac" class="selected">Miền Bắc</a></li>
+                    <li><a class="link-sp" href="#CSS" data-id="mienTrung">Miền Trung</a></li>
+                    <li><a class="link-sp" href="#jquery" data-id="mienNam">Miền Nam</a></li>
+                    <li><a class="link-sp" href="#PHP">Đồ uống</a></li>
+                    <li><a class="link-sp" href="#camket">Tráng miệng</a></li>
                 </ul>
+               <div class="list-productss">
+                <div id="HTML" class="tab_content">
+                    <div class="list-product">
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/phở hà nôi.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Phở Hà Nội</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">60.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">50.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/Nem cua bể.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Nem Cua Bể</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">50.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">45.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/Trâu gác bếp.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Trâu Gác Bếp Tây Bắc</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">150.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">125.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/lợn quay xứ lạng.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Lợn Quay Xứ Lạng</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">120.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">110.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div id="CSS" class="tab_content">
+                    <div class="list-product">
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/Súp lươn.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Súp Lươn Nghệ An</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">50.000đ/bát</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">45.000đ/bát</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/nem nướng.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Nem Nướng Nha Trang</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">70.000đ/mẹt</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">55.000đ/mẹt</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/bánh mì que.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Bánh mì que Đà Nắng</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">40.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">35.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/bún bò huế.jpg" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Bún bò Huế</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">120.000đ/bát</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">90.000đ/bát</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="jquer" class="tab_content">
+                    <div class="list-product">
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/banh canh ghẹ.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Bánh canh ghẹ</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">60.000đ/bát</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">50.000đ/bát</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/Bò tơ tây ninh.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Bò tơ Tây Ninh</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">89.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">65.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/sủi cao.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Sủi cảo</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">50.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">45.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/bánh canh trảng bàng.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Bánh canh Trảng Bàng</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">90.000đ/bát</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">80.000đ/bát</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/thằn lằn.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Thằn lằn núi Bà Đen</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">70.000đ/đĩa</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">55.000đ/đĩa</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-product ">
+                            <div class="hover-img">
+                                <div class="imgs">
+                                    <img class="w-100" src="/imgs/cá lóc.webp" alt="sp-1">
+                                </div>
+                                <div class="item">
+                                    <h3 class="product-title">Cá lóc nướng trui</h3>
+                                    <div class="icon-star">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="product-size">
+                                        <span class="label">Giá niêm yết:</span>
+                                        <span class="value">120.000đ/mẹt</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span class="or">Giá Khuyến mại:</span>
+                                        <span class="colorr">115.000đ/mẹt</span>
+                                    </div>
+                                    <button>Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+               </div>
+
             </div>
-            <div id="HTML" class="tab_content">
-                <div class="list-product">
-                    <div class="box-product ">
+
+        </div>
+    </section> -->
+    <section id="product">
+        <div class="container ">
+            <div class="title-container">
+                <div class="line"></div>
+                <h2>Thực đơn của chúng tôi</h2>
+                <div class="line"></div>
+            </div>
+            <div class="box-p">
+                <p>"Ẩm thực Việt Nam là bức tranh đầy màu sắc với nét tinh túy và đặc trưng của ba miền: Bắc thanh tao,
+                    Trung đậm đà, và Nam phóng khoáng. Mỗi món ăn không chỉ phản ánh hương vị mà còn là tâm hồn và văn
+                    hóa của từng vùng đất."</p>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center filter-button-group">
+                    <button type="button" class="btn  text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn  text-dark" data-filter=".best">Miền Bắc</button>
+                    <button type="button" class="btn  text-dark" data-filter=".feat">Miền Trung</button>
+                    <button type="button" class="btn  text-dark" data-filter=".new">Miền Nam</button>
+                    <button type="button" class="btn  text-dark" data-filter=".no">Đồ Uống</button>
+                    <button type="button" class="btn  text-dark" data-filter=".yes">Trái Cây</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <!--  -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/phở hà nôi.jpg" alt="sp-1">
@@ -237,143 +644,9 @@
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/Nem cua bể.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Nem Cua Bể</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">45.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/Trâu gác bếp.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Trâu Gác Bếp Tây Bắc</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">150.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">125.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/lợn quay xứ lạng.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Lợn Quay Xứ Lạng</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">120.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">110.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/cơm lam bắc kạn.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Cơm Lam Bắc Kạn</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">40.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/Cá kho.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Cá Khó Làng Vũ Đại</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">200.000đ/nồi</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">185.000đ/nồi</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-            <div id="CSS" class="tab_content">
-                <div class="list-product">
-                    <div class="box-product ">
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/Súp lươn.jpg" alt="sp-1">
@@ -399,142 +672,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/nem nướng.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Nem Nướng Nha Trang</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">70.000đ/mẹt</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">55.000đ/mẹt</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/bánh mì que.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Bánh mì que Đà Nắng</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">40.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">35.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/bún bò huế.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Bún bò Huế</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">120.000đ/bát</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">90.000đ/bát</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/bánh canh.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Bánh canh Quảng Bình</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">40.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/gỏi sứa.jpg" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Gỏi Sứa</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">80.000đ/nồi</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">75.000đ/nồi</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="jquery" class="tab_content">
-                <div class="list-product">
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/banh canh ghẹ.webp" alt="sp-1">
@@ -559,143 +697,9 @@
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/Bò tơ tây ninh.webp" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Bò tơ Tây Ninh</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">89.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">65.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/sủi cao.webp" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Sủi cảo</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">45.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/bánh canh trảng bàng.webp" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Bánh canh Trảng Bàng</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">90.000đ/bát</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">80.000đ/bát</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/thằn lằn.webp" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Thằn lằn núi Bà Đen</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">70.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">55.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/cá lóc.webp" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Cá lóc nướng trui</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">120.000đ/mẹt</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">115.000đ/mẹt</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-            <div id="PHP" class="tab_content">
-                <div class="list-product">
-                    <div class="box-product ">
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 no">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/cà phê trứng.jfif" alt="sp-1">
@@ -721,142 +725,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/trà mót.jfif" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Trà Mót - Hội An</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/ly</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">45.000đ/ly</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/nước dừa.jfif" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title"> Nước dừa tươi - Bến Tre</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">40.000đ/quả</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">35.000đ/quả</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/chè sen.jfif" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Chè sen</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/đĩa</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">40.000đ/đĩa</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/trà chanh.jfif" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Trà chanh</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">30.000đ/ly</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">25.000đ/ly</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product ">
-                        <div class="hover-img">
-                            <div class="imgs">
-                                <img class="w-100" src="/imgs/trà sữa.jfif" alt="sp-1">
-                            </div>
-                            <div class="item">
-                                <h3 class="product-title">Trà sữa trái cây tươi</h3>
-                                <div class="icon-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                </div>
-                                <div class="product-size">
-                                    <span class="label">Giá niêm yết:</span>
-                                    <span class="value">60.000đ/ly</span>
-                                </div>
-                                <div class="product-price">
-                                    <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">59.000đ/ly</span>
-                                </div>
-                                <button>Thêm vào giỏ hàng</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="camket" class="tab_content">
-                <div class="list-product">
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 yes">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/vải.jfif" alt="sp-1">
@@ -882,13 +751,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                         <div class="hover-img">
                             <div class="imgs">
-                                <img class="w-100" src="/imgs/nhãn.jfif" alt="sp-1">
+                                <img class="w-100" src="/imgs/Trâu gác bếp.jpg" alt="sp-1">
                             </div>
                             <div class="item">
-                                <h3 class="product-title">Nhãn lồng Hưng Yên</h3>
+                                <h3 class="product-title">Trâu Gác Bếp Tây Bắc</h3>
                                 <div class="icon-star">
                                     <span><i class="fa-solid fa-star"></i></span>
                                     <span><i class="fa-solid fa-star"></i></span>
@@ -898,17 +767,95 @@
                                 </div>
                                 <div class="product-size">
                                     <span class="label">Giá niêm yết:</span>
-                                    <span class="value">30.000đ/kg</span>
+                                    <span class="value">150.000đ/đĩa</span>
                                 </div>
                                 <div class="product-price">
                                     <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">25.000đ/kg</span>
+                                    <span class="colorr">125.000đ/đĩa</span>
                                 </div>
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/bún bò huế.jpg" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Bún bò Huế</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">120.000đ/bát</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">90.000đ/bát</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/Bò tơ tây ninh.webp" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Bò tơ Tây Ninh</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">89.000đ/đĩa</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">65.000đ/đĩa</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 no">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/trà mót.jfif" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Trà Mót - Hội An</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">50.000đ/ly</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">45.000đ/ly</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 yes">
                         <div class="hover-img">
                             <div class="imgs">
                                 <img class="w-100" src="/imgs/na.jfif" alt="sp-1">
@@ -934,13 +881,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                         <div class="hover-img">
                             <div class="imgs">
-                                <img class="w-100" src="/imgs/nho.jfif" alt="sp-1">
+                                <img class="w-100" src="/imgs/lợn quay xứ lạng.jpg" alt="sp-1">
                             </div>
                             <div class="item">
-                                <h3 class="product-title">Nho đỏ Ninh Thuận</h3>
+                                <h3 class="product-title">Lợn Quay Xứ Lạng</h3>
                                 <div class="icon-star">
                                     <span><i class="fa-solid fa-star"></i></span>
                                     <span><i class="fa-solid fa-star"></i></span>
@@ -950,23 +897,23 @@
                                 </div>
                                 <div class="product-size">
                                     <span class="label">Giá niêm yết:</span>
-                                    <span class="value">120.000đ/kg</span>
+                                    <span class="value">120.000đ/đĩa</span>
                                 </div>
                                 <div class="product-price">
                                     <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">110.000đ/kg</span>
+                                    <span class="colorr">110.000đ/đĩa</span>
                                 </div>
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
                         <div class="hover-img">
                             <div class="imgs">
-                                <img class="w-100" src="/imgs/bơ.jfif" alt="sp-1">
+                                <img class="w-100" src="/imgs/bánh mì que.jpg" alt="sp-1">
                             </div>
                             <div class="item">
-                                <h3 class="product-title">Bơ sáp Đăk Lăk</h3>
+                                <h3 class="product-title">Bánh mì que Đà Nắng</h3>
                                 <div class="icon-star">
                                     <span><i class="fa-solid fa-star"></i></span>
                                     <span><i class="fa-solid fa-star"></i></span>
@@ -976,23 +923,23 @@
                                 </div>
                                 <div class="product-size">
                                     <span class="label">Giá niêm yết:</span>
-                                    <span class="value">50.000đ/kg</span>
+                                    <span class="value">40.000đ/đĩa</span>
                                 </div>
                                 <div class="product-price">
                                     <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">40.000đ/kg</span>
+                                    <span class="colorr">35.000đ/đĩa</span>
                                 </div>
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
-                    <div class="box-product ">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
                         <div class="hover-img">
                             <div class="imgs">
-                                <img class="w-100" src="/imgs/sầu riêng.jfif" alt="sp-1">
+                                <img class="w-100" src="/imgs/sủi cao.webp" alt="sp-1">
                             </div>
                             <div class="item">
-                                <h3 class="product-title">Sầu riêng ri6</h3>
+                                <h3 class="product-title">Sủi cảo</h3>
                                 <div class="icon-star">
                                     <span><i class="fa-solid fa-star"></i></span>
                                     <span><i class="fa-solid fa-star"></i></span>
@@ -1002,16 +949,110 @@
                                 </div>
                                 <div class="product-size">
                                     <span class="label">Giá niêm yết:</span>
-                                    <span class="value">120.000đ/kg</span>
+                                    <span class="value">50.000đ/đĩa</span>
                                 </div>
                                 <div class="product-price">
                                     <span class="or">Giá Khuyến mại:</span>
-                                    <span class="colorr">110.000đ/kg</span>
+                                    <span class="colorr">45.000đ/đĩa</span>
                                 </div>
                                 <button>Thêm vào giỏ hàng</button>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/cơm lam bắc kạn.jpg" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Cơm Lam Bắc Kạn</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">50.000đ/đĩa</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">40.000đ/đĩa</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/gỏi sứa.jpg" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Gỏi Sứa</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">80.000đ/nồi</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">75.000đ/nồi</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="hover-img">
+                            <div class="imgs">
+                                <img class="w-100" src="/imgs/thằn lằn.webp" alt="sp-1">
+                            </div>
+                            <div class="item">
+                                <h3 class="product-title">Thằn lằn núi Bà Đen</h3>
+                                <div class="icon-star">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <div class="product-size">
+                                    <span class="label">Giá niêm yết:</span>
+                                    <span class="value">70.000đ/đĩa</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="or">Giá Khuyến mại:</span>
+                                    <span class="colorr">55.000đ/đĩa</span>
+                                </div>
+                                <button>Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+
+
+                    <!--  -->
+
+
+
+                    <!--  -->
+
+
+
+                    <!--  -->
+
+
 
                 </div>
             </div>
@@ -1040,7 +1081,7 @@
         </div>
         <button>Chốt đơn</button>
     </section>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             var $tabs = $('.clearfix li'); // Lưu trữ các tab
             var $tabContents = $('.tab_content'); // Lưu trữ các nội dung của tab
@@ -1072,7 +1113,7 @@
             });
         });
 
-    </script>
+    </script> -->
     <section class=" video">
         <div class="container">
             <div class="row box-video1">
@@ -1631,7 +1672,7 @@
         </div>
     </footer>
     <div class="cursor"></div>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -1642,6 +1683,9 @@
         integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
 </body>
 
 </html>

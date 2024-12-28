@@ -8,14 +8,15 @@
 .sp{
     margin-top: 160px;
 }
+
 .carousel-item::after {
     content: "";
     position: absolute;
-    background-color: #080808;
+    background-color: #242323;
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 400px;
     opacity: 0.7;
 }
 
@@ -35,9 +36,10 @@
     background-color: #E67E22;
 }
 .carousel-item img {
-    height: 500px;
+    height: 400px !important;
     background-position: center;
     background-size: cover;
+    border: 5px solid #242323 !important;
    
 }
 /*  */
@@ -430,6 +432,13 @@ h2:hover {
         padding: 15px 10px;
         border-radius: 15px;
         height: 300px;
+    }
+    .carousel-item img {
+        height: 300px !important;
+        background-position: center;
+        background-size: cover;
+        border: 5px solid #242323 !important;
+       
     }
     
 
