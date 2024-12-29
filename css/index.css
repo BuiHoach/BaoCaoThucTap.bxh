@@ -78,6 +78,33 @@
     opacity: 0.7;
 }
 /* banner  caurousel */
+#header{
+    padding: 20px 0;
+    z-index: 1;
+    margin: 150px 400px;
+    background-color: rgb(241 0 0 / 32%);
+    position: absolute;
+    border-radius: 50px 0 50px 0;
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+    background-color: #E5345B;
+    color: #fff;
+    font-weight: bold;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+    color: #0eb0d0;
+}
+#header .carousel-control-prev {
+    left: -2rem;
+    top: 7rem !important;
+}
+#header .carousel-control-next {
+    right: -2rem;
+    top: 7rem !important;
+}
+/* // */
 #carouselExampleControls span {
     border-radius: 100%;
     background: transparent;
@@ -445,7 +472,7 @@ h2:hover {
 
 .video {
     display: flex;
-    background-color: #f7f7f7; /* Màu nền nhẹ nhàng */
+    background-image: url("/imgs/backgound.jfif");
     padding: 3rem 0;
 }
 
@@ -833,32 +860,39 @@ form .form-group input:focus {
     /* inerr----------- */
     
     
-    .flip-box {
-        width: 250px;
-        height: auto;
-        perspective: 1000px;
-        margin:0 4.5rem;
+    #header {
+        padding: 20px 0;
         z-index: 1;
+        margin: 45px 0;
+        background-color: rgb(241 0 0 / 32%);
         position: absolute;
-        top: 0;
-        margin-top: 12rem;
+        border-radius: 50px 0 50px 0;
+    }
+    #header .carousel-control-prev {
+       display: none !important;
+    }
+    #header .carousel-control-next {
+        display: none !important;
     }
     #carouselExampleControls span {
        
         margin-top: 20em;
         
     }
-    .text-inner {
-        padding: 0;
-    }
+    
     /* thucw don */
     #product {
         margin: -350px 0;
        padding-top: 30px;
         position: relative;
     }
-    .btn {
+    /* .btn {
         margin: 0 !important;
+    } */
+    .btn{
+        margin: 10px !important;
+        border: 1px solid #555 !important;
+        border-radius: 20px 0 20px 0 !important;
     }
     /*  */
     .clearfix {
@@ -949,16 +983,20 @@ form .form-group input:focus {
         position: relative;
     }
      /* inerr----------- */
-    .flip-box {
-        width: 400px;
-        height: auto;
-        perspective: 1000px;
-        margin: 0 20rem;
+     #header {
+        padding: 20px 0;
         z-index: 1;
+        margin: 135px 25px;
+        background-color: rgb(241 0 0 / 32%);
         position: absolute;
-        top: 0;
-        margin-top: 23rem;
+        border-radius: 50px 0 50px 0;
     }
+    #header .carousel-control-prev {
+        display: none !important;
+     }
+     #header .carousel-control-next {
+         display: none !important;
+     }
     #carouselExampleControls span {
        
         margin-top: 30em;
@@ -1019,6 +1057,11 @@ form .form-group input:focus {
     }
     #baner-lk {
         margin-top: -30px !important;
+    }
+    .btn{
+        margin: 10px !important;
+        border: 1px solid #555 !important;
+        border-radius: 20px 0 20px 0 !important;
     }
 
 
