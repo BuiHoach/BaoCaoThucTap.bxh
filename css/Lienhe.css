@@ -5,7 +5,7 @@
 }
 .box-banner img {
     filter: brightness(3) invert(1);
-    width: 10%;
+   
 }
 /* Hiệu ứng kết hợp */
 @keyframes blinkScale {

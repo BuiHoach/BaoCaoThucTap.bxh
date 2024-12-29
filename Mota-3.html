@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header>
+     <!-- header -->
+     <header>
         <div class="content">
             <div class="container">
                 <div class="top-max row">
@@ -71,35 +71,35 @@
                     <div class="row">
                         <div class="col-2 logo">
                             <div class="logo">
-                                <a href=""><img src="/imgs/anh1-removebg-preview.png""></a>
+                                <a href=""><img src="/imgs/anh1-removebg-preview.png"></a>
+                            </div>
+
+                        </div>
+                        <div class=" col-8 timkiem">
+                            <div class="form">
+                                <select id="select" onchange="scrollToSection()" class = "form-control" >
+                                    <option value="#product">Tất cả</option>
+                                    <option value="#product">Miền Bắc</option>
+                                    <option value="#product">Miền Trung</option>
+                                    <option value="#product">Miền Nam</option>
+                                    <option value="#product">Đồ uống</option>
+                                    <option value="#product">Tráng miệng</option>
+                                </select>
+                                <input type="text" value="" placeholder="Tìm kiếm" class="search-input form-control">
+                                <button class = "form-control"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class=" col-8 timkiem">
-                                    <div class="form">
-                                        <select name="" id="select">
-                                            <option value="#">Tất cả
-                                            <option value="">Miền Bắc</option>
-                                            <option value="">Miền Trung</option>
-                                            <option value="">Miền Nam</option>
-                                            </option>
-                                            <input type="text" value="" placeholder="Tìm kiếm" class="search-input">
+                        <div class="col-2 box">
 
-                                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                                        </select>
-
-                                    </div>
-                            </div>
-                            <div class="col-2 box">
-
-                                <div class="box-1">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <a href=""><label for="">Giỏ hàng</label></a>
-                                </div>
+                            <div class="box-1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <a href=""><label for="">Giỏ hàng</label></a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="bgr">
             <div class="nav-icon">
@@ -432,5 +432,8 @@
     integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/js/index.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
 
 </html>

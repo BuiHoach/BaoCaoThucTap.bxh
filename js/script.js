@@ -16,3 +16,16 @@ function resetFilterBtns(){
     $(this).removeClass('active-filter-btn');
   });
 }
+
+// 
+function scrollToSection() {
+  const selectElement = document.getElementById("select");
+  const sectionId = selectElement.value; // Lấy giá trị id của section
+  
+  const targetSection = document.querySelector(sectionId); // Tìm phần tử theo id
+  if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" }); // Cuộn đến phần tử
+  } else {
+      console.error("Không tìm thấy section:", sectionId);
+  }
+}

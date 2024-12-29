@@ -4,95 +4,71 @@
     text-decoration: none;
     list-style: none;
 }
-
-.sp{
-    margin-top: 160px;
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
 }
 
-.carousel-item::after {
+/* header */
+#header{
+    background: url(../imgs/image.png) top/cover no-repeat;
+    margin-top: 160px;
+    height: 450px;
+}
+#header::after {
     content: "";
     position: absolute;
     background-color: #242323;
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 450px;
     opacity: 0.7;
 }
-
-/* banner  caurousel */
-#carouselExampleControls span {
-    border-radius: 100%;
-    background: transparent;
-    color:#fff;
-    width: 3rem;
-    height: 2rem;
-    margin-top: 20em;
-    border: 2px solid #fff;
-    transition: all 0.3s;
-    font-weight: bold;
-}
-#carouselExampleControls span:hover{
-    background-color: #E67E22;
-}
-.carousel-item img {
-    height: 400px !important;
-    background-position: center;
-    background-size: cover;
-   
-   
-}
-/*  */
-/*  */
-#banner {
-    position: absolute;
-    top: 250px;
+.carousel-inner{
     z-index: 1;
-    margin: 0 40.1rem;
-}
-.box-banner img {
-    filter: brightness(3) invert(1);
-    width: 100% !important;
-}
-/* Hiệu ứng kết hợp */
-@keyframes blinkScale {
-    0%, 100% {
-        opacity: 1; /* Hiển thị đầy đủ */
-        transform: scale(1); /* Kích thước bình thường */
-    }
-    50% {
-        opacity: 0.5; /* Mờ đi một chút */
-        transform: scale(1.1); /* Phóng to nhẹ */
-    }
-}
-/* Tiêu đề */
-.banner-title h3 {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    animation: blinkScale 3s infinite ease-in-out;
 }
 
-
-.box-banner img {
-    filter: brightness(3) invert(1);
-    width: 10%;
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
 }
-
-.box-banner {
-    text-align: center;
-    padding-top: 2.2rem;
-    animation: blinkScale 3s infinite ease-in-out;
-}
-
-#banner h3 {
-    text-align: center;
+.carousel-item .btn{
+    border-color: #fff!important;
+    background-color: #E5345B;
     color: #fff;
-    font-family: Gotham-Ultra;
-    padding-top: 10px;
-    position: relative;
+    font-weight: bold;
 }
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+    color: #0eb0d0;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.carousel-control-prev {
+    left: 0;
+    top: 12rem !important;
+}
+.carousel-control-next {
+    right: 0;
+    top: 12rem !important;
+}
+
+
+
 /* neww */
 #newws .header-menu {
     margin-left: 38px;
@@ -395,8 +371,10 @@ h2:hover {
     .cart{
         width: 350px;
     }
-    .sp {
-        position: relative;
+    #header {
+        background: url(../imgs/image.png) top / cover no-repeat;
+        margin-top: 160px;
+        height: 450px;
         top: -20px;
     }
     #Mota {
@@ -445,8 +423,10 @@ h2:hover {
 }
 
 @media only screen and (min-width: 678px) and (max-width:1024px) {
-    .sp {
-        position: relative;
+    #header {
+        background: url(../imgs/image.png) top / cover no-repeat;
+        margin-top: 160px;
+        height: 450px;
         top: -25px;
     }
     #Mota {

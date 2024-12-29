@@ -665,15 +665,13 @@ h2 {
     #header-nav li {
         margin-left: 0;
     }
+    #header-nav li a:hover {
+       color: #00ff3c;
+       font-weight: bold;
+    }
     
     #header-nav ul li:hover ::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        width: 20%;
-        height: 0.3rem;
-        background-color: #bd945f;
-        text-align: center;
+       display: none;
     }
     .nav-icon {
         display: block;
@@ -784,14 +782,14 @@ h2 {
     #header-nav li {
         margin-left: 0;
     }
-    #header-nav ul li:hover ::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        width: 10%;
-        height: 0.3rem;
-        background-color: #bd945f;
-    }
+    #header-nav li a:hover {
+        color: #00ff3c;
+        font-weight: bold;
+     }
+     
+     #header-nav ul li:hover ::before {
+        display: none;
+     }
     .nav-icon {
         display: block;
        
